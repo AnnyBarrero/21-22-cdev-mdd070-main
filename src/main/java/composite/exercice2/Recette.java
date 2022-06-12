@@ -22,7 +22,7 @@ public class Recette implements  CookComponent{
         for (Map.Entry<CookComponent, Double> mapIngredientsPizza : components.entrySet()) {
             CookComponent ingredientDePizza = mapIngredientsPizza.getKey();
             Double quantiteIngredientPizza =  mapIngredientsPizza.getValue();
-            prixTotal += ingredientDePizza.getPrix() = quantiteIngredientPizza;
+            prixTotal += ingredientDePizza.getPrix() * quantiteIngredientPizza;
         }
         return prixTotal;
     }
